@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+
+    <h1>Tic Tac Toe</h1>
+
+    <div class="game-card">
+        <div class="board">
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+        </div>
+
+        <p id="status">Player X turn</p>
+        <button id="restart">Restart Game</button>
+    </div>
+    <script>
+        if ("serviceWorker" in navigator) 
+        {
+            navigator.serviceWorker.register("service-worker.js");
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
